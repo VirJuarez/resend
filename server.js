@@ -17,7 +17,7 @@ app.post('/api/send-email', async (req, res) => {
   try {
     const html = await getEmailTemplate('template',{
         name: "Anthony",
-        form_url: process.env.FRONTEND_URL
+        form_url: process.env.FRONTEND_URL.toString()
     }); 
 
     const data = await resend.emails.send({
