@@ -28,13 +28,13 @@ Este proyecto es un servicio de envío de emails utilizando Resend. Actualmente 
 ## Uso del API
 
 ### Endpoint: POST /api/send-email
-Este endpoint está configurado para enviar un email con un link al formulario de customer scoops (https://customer-scoops-form.vercel.app/).
+Este endpoint está configurado para enviar un email con un link al formulario de customer scoops (En el caso del deploy el link es a: https://customer-scoops-form.vercel.app/).
 
 #### Importante
 Debido a las restricciones de Resend, actualmente solo se pueden enviar correos a distintos emails si se cuenta con un dominio verificado. Por el momento, el sistema está configurado para enviar correos a una dirección de email específica asociada a la cuenta de Resend utilizada.
 
 ## Mejoras a futuro
-Sería buenoincorporar las siguientes funcionalidades al endpoint:
+Sería bueno incorporar las siguientes funcionalidades al endpoint:
 
 - Recibir como parte del body de la petición:
   - Nombre del destinatario
